@@ -1,0 +1,29 @@
+{# app/templates/recipe_form.html — 新增 / 編輯食譜表單（共用） #}
+{# 透過傳入的 recipe 變數判斷是新增（None）還是編輯（有值） #}
+{# TODO: 實作於階段六 Step 6.4 #}
+{% extends "base.html" %}
+
+{% block title %}
+    {% if recipe %}編輯食譜{% else %}新增食譜{% endif %} — 食譜收藏夾
+{% endblock %}
+
+{% block content %}
+    {# 表單（action 由路由傳入） #}
+    <form action="{{ form_action }}" method="POST">
+
+        {# 基本資訊欄位 #}
+        {# TODO: title、category（select）、description、cook_time、servings、difficulty #}
+
+        {# 食材區塊（動態新增列） #}
+        {# TODO: 顯示現有食材（編輯模式）或空白行（新增模式） #}
+        {# TODO: JavaScript 「+ 新增食材」按鈕 #}
+
+        {# 步驟區塊（動態新增列） #}
+        {# TODO: 顯示現有步驟（編輯模式）或空白行（新增模式） #}
+        {# TODO: JavaScript 「+ 新增步驟」按鈕 #}
+
+        {# 送出 / 取消按鈕 #}
+        {# TODO: submit 按鈕；取消連結回首頁 #}
+
+    </form>
+{% endblock %}

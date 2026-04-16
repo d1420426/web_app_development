@@ -1,0 +1,16 @@
+{# app/templates/search.html — 搜尋結果頁 #}
+{# TODO: 實作於階段六 Step 6.4 #}
+{% extends "base.html" %}
+
+{% block title %}搜尋結果 — 食譜收藏夾{% endblock %}
+
+{% block content %}
+    {# 搜尋框（保留原本輸入的關鍵字） #}
+    {# TODO: form GET /search，input name="q" value="{{ keyword }}"，分類 select #}
+
+    {# 搜尋結果列表 #}
+    {# TODO: for recipe in recipes → 食譜卡片 #}
+
+    {# 無結果提示 #}
+    {# TODO: 若 recipes 為空，顯示「找不到符合的食譜」 #}
+{% endblock %}

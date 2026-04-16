@@ -1,0 +1,16 @@
+{# app/templates/index.html — 首頁：食譜列表 + 分類篩選 #}
+{# TODO: 實作於階段六 Step 6.4 #}
+{% extends "base.html" %}
+
+{% block title %}首頁 — 食譜收藏夾{% endblock %}
+
+{% block content %}
+    {# 分類篩選按鈕列 #}
+    {# TODO: 顯示所有類別按鈕，點擊後以 category=? query string 篩選 #}
+
+    {# 食譜卡片列表 #}
+    {# TODO: for recipe in recipes → 顯示食譜卡片（名稱、類別、難易度） #}
+
+    {# 無食譜時的提示 #}
+    {# TODO: 若 recipes 為空，顯示「尚無食譜，點此新增」 #}
+{% endblock %}
